@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         int f = Integer.parseInt(flower.getText().toString());
         int v = Integer.parseInt(vage.getText().toString());
         int l = Integer.parseInt(lobo.getText().toString());
-        int remain = money-(50*f)+(30*v)+(l*100);
+        int remain = money-(50*f)-(30*v)-(l*100);
         moneyyy.setText(String.valueOf(remain));
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("訂購完成")
